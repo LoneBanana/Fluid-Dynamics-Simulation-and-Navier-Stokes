@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Generated datasets and checkpoints (reproducible from ml/scripts)
+ml/data/
+ml/checkpoints/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/

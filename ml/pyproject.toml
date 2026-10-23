@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nsml"
+version = "0.1.0"
+description = "Phase 1 playground: neural surrogates and PINNs for Navier-Stokes-type dynamics"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.4", "numpy", "matplotlib"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["nsml*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
